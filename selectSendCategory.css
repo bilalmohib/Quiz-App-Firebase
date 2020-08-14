@@ -1,0 +1,8 @@
+/* togle hide show button effects */
+[id^=Prim] + *{
+    display:none;
+  }
+  [id^=Prim]:target + *{
+    display:block;
+  }
+  /* togle hide show button effects */

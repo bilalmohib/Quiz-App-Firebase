@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="data.css">
+    <title>Admin</title>
+</head>
+<body>
+    <div class="alert">Your message has been sent</div>
+    <div>Data for Quiz App</div>
+    <h1 id="clas" style="color: rgb(10, 32, 90);"></h2>
+    <h2 id="sub" style="color: rgb(5, 53, 19);"></h3>
+    <h1>Question</h1>
+    <!-- <form id="Quiz" action="data.html"> -->
+    <input id="question" required placeholder="Enter the question to insert in the quiz" type="text">
+
+    <!-- answers -->
+    <br><br>
+    <label for="option1">Option 1: </label>
+    <input id="option1" required type="text">
+    <br>
+    <label for="option2">Option 2: </label>
+    <input id="option2" required type="text">
+    <br>
+    <label for="option3">Option 3: </label>
+    <input id="option3" required type="text">
+    <br>
+    <label for="option4">Option 4: </label>
+    <input id="option4" required type="text">
+    <br>
+    <label for="answer" style="color: rgb(30, 53, 8);">Answer: </label>
+    <input id="answer" required placeholder="Enter the right answer" type="text">
+    <br>
+    <!-- answers -->
+    <input type="submit" onclick="sendMesssage()" id="submit">
+    <!-- </form> -->
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+
+<script>
+     // Your web app's Firebase configuration
+ var firebaseConfig = {
+    apiKey: "AIzaSyBmQfYy_p1y5A-0tzCeZDPlPJume7YwYPU",
+    authDomain: "quizappfirebases.firebaseapp.com",
+    databaseURL: "https://quizappfirebases.firebaseio.com",
+    projectId: "quizappfirebases",
+    storageBucket: "quizappfirebases.appspot.com",
+    messagingSenderId: "985601574561",
+    appId: "1:985601574561:web:43ac7087ab6fdf51fa92e0",
+    measurementId: "G-FPVCTWWN6M"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+
+</body>
+<script src="data.js"></script>
+</html>
