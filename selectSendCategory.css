@@ -6,3 +6,24 @@
     display:block;
   }
   /* togle hide show button effects */
+  #class3,#class4,#class5,#class6,#class7,#class8,#class9,#class10
+  {
+      font-size: 30px;
+      color: purple;
+      margin: 20px;
+  }
+  .box
+  {
+    color: rgb(4, 93, 93);
+    display: inline;
+    margin: 20px;
+    border: 1px solid blue;
+    border-radius: 10%;
+  }
+  button
+  {
+    font-size: 35px;
+    border-radius: 10%;
+    box-shadow: 2px 2px 3px blue;
+    background-color: cadetblue;
+  }
