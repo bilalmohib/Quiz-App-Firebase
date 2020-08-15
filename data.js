@@ -1,4 +1,55 @@
-var database =firebase.database();
+var database=firebase.database();
+/////////////////////////////////////////////////////////////////////
+// Initialize the FirebaseUI Widget using Firebase.
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+
+    document.getElementById("user_div").style.display = "block";
+    document.getElementById("login_div").style.display = "none";
+    
+    var user = firebase.auth().currentUser;
+
+    if(user != null){
+
+      var email_id = user.email;
+      document.getElementById("user_para").innerHTML = "Welcome to Quiz Data Entry Portal.You are welcome: " + email_id;
+     
+    }
+
+  } else {
+    // No user is signed in.
+
+    document.getElementById("user_div").style.display = "none";
+    document.getElementById("login_div").style.display = "block";
+
+  }
+});
+
+function login(){
+
+  var userEmail = document.getElementById("email_field").value;
+  var userPass = document.getElementById("password_field").value;
+
+  firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+
+    window.alert("Error : " + errorMessage);
+
+    // ...
+  });
+
+}
+
+function logout(){
+  firebase.auth().signOut();
+}
+//////////////////////////////////////////////////////////////////////
+
+
+
 /////////////////////////////////////////
 let className = sessionStorage.getItem("className");
 let subjectName = sessionStorage.getItem("subjectName");
@@ -7,7 +58,7 @@ var clas=document.getElementById("clas").innerHTML=className;
 var sub=document.getElementById("sub").innerHTML="Subject: "+subjectName;
 ////////////////////////////////////////////////////////
 alert("You are now Entering the data for :-"+className+"\nFOR SUBJECT :-"+subjectName);
-while(className==null||subjectName==null)
+while(className==""||subjectName=="")
 {
   alert("Please go back and choose the class and the subject to proceed");
 }
@@ -87,3 +138,5 @@ setTimeout(function(){
 },3000);
 
 }
+
+

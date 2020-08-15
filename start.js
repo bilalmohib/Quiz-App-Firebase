@@ -5,6 +5,5 @@ function submitForm(e)//e event ka prameter ha jo index se lia ha event b lkh sa
                                                       //name ko lia jo b is me hogi value me save hoga
       //player name save in seassion storage
     sessionStorage.setItem("name", name);//take jab b name chye ho to get name ker k lele hum "name"
-  
-    location.href = "selectQuizCategory.html";//jo hum ne page banya ha store krne k bad wahn pe ye target kra ha ha
+
   }
