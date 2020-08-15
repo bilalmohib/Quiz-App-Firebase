@@ -1,3 +1,4 @@
+alert("The username is :bilalmohib7896@gmail.com\nThe password is: good");
 var database=firebase.database();
 /////////////////////////////////////////////////////////////////////
 // Initialize the FirebaseUI Widget using Firebase.
