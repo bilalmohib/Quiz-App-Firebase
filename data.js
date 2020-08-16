@@ -1,6 +1,7 @@
 var database=firebase.database();
 /////////////////////////////////////////////////////////////////////
 // Initialize the FirebaseUI Widget using Firebase.
+var email_id;
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
@@ -12,7 +13,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 
     if(user != null){
 
-      var email_id = user.email;
+      email_id = user.email;
       document.getElementById("user_para").innerHTML = "Welcome to Quiz Data Entry Portal.You are welcome: " + email_id;
      
     }
@@ -109,6 +110,7 @@ var Quiz={
     Option2:option2,
     Option3:option3,
     Option4:option4,
+    author:email_id,
     Answer:answer,
 }
 

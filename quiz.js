@@ -65,9 +65,10 @@ console.log(keys.length)
       var Option2=quiz[key].Option2;
       var Option3=quiz[key].Option3;
       var Option4=quiz[key].Option4;
+      var Author=quiz[key].author;
 
       question.innerHTML = `
-      <h2>Q${count + 1}. ${Question}</h2>
+      <h2>Q${count + 1}. ${Question}(${Author})</h2>
        <ul class="option_group">
       <li class="option">${Option1}</li>
       <li class="option">${Option2}</li>

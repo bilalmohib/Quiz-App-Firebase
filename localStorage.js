@@ -6,6 +6,9 @@ var check2=false;
 
 function getData(e)
 {
+
+    e.style.color = 'white';
+    e.style.backgroundColor='green'
     subjectName=e.innerHTML;
     console.log(subjectName);
     sessionStorage.setItem("subjectName", subjectName);//take jab b name chye ho to get name ker k lele hum "name"
@@ -14,6 +17,10 @@ function getData(e)
 
 function getClass(e)
 {
+      
+    e.style.color = 'white';
+    e.style.backgroundColor='purple'
+    e.style.borderRadius='10%'
     className=e.innerHTML;
     console.log(className);
     sessionStorage.setItem("className",className);//take jab b name chye ho to get name ker k lele hum "name"

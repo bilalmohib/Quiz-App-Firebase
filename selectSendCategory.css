@@ -1,3 +1,7 @@
+body
+{
+  background-color: aqua;
+}
 /* togle hide show button effects */
 [id^=Prim] + *{
     display:none;
@@ -6,7 +10,7 @@
     display:block;
   }
   /* togle hide show button effects */
-  #class3,#class4,#class5,#class6,#class7,#class8,#class9,#class10
+  #class
   {
       font-size: 30px;
       color: purple;
@@ -27,3 +31,10 @@
     box-shadow: 2px 2px 3px blue;
     background-color: cadetblue;
   }
+ul li{
+  font-size:30px;
+  color: green;
+}
+a{
+  text-decoration: none;
+}
