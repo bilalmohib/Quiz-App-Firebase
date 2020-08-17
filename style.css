@@ -1,5 +1,4 @@
-
-  * {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -76,7 +75,7 @@
     cursor: pointer;
   }
 
-button a{
+a{
   text-decoration: none;
   color: inherit;
 }
@@ -186,4 +185,6 @@ button a{
     margin-top: 15px;
     font-size: 35px;
   }
+  
+ 
   
