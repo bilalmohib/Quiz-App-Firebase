@@ -72,10 +72,11 @@ a{
     padding: 20px 0;
     border: none;
     border-radius: 100px;
-    background-color: #fff;
-    color: #341f97;
+    background-color: #0020C2;
+    color: aliceblue;
     font-size: 22px;
     transition: 0.4s all;
+     width: 100%;
   }
   
 
