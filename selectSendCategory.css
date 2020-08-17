@@ -1,6 +1,10 @@
 body
 {
-  background-color: aqua;
+  background: url(Images/backse.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 /* togle hide show button effects */
 [id^=Prim] + *{
