@@ -24,9 +24,9 @@
       <span class="fas fa-caret-down first"></span>
     </a>
     <ul class="feat-show">
-      <li><a href="#Prim3" onclick="getClass(this)">Class III</a></li>
-      <li><a href="#Prim4" onclick="getClass(this)">Class IV</a></li>
-      <li><a href="#Prim5" onclick="getClass(this)">Class V</a></li>
+      <li><a id="class3" href="#Prim3"  onclick="getClass(this)">Class III</a></li>
+      <li><a id="class4" href="#Prim4" onclick="getClass(this)">Class IV</a></li>
+      <li><a id="class5" href="#Prim5" onclick="getClass(this)">Class V</a></li>
     </ul>
     </li>
   
@@ -36,11 +36,11 @@
       <span class="fas fa-caret-down second"></span>
     </a>
     <ul class="serv-show">
-      <li><a href="#Prim6" onclick="getClass(this)">Class VI</a></li>
-      <li><a href="#Prim7" onclick="getClass(this)">Class VII</a></li>
-      <li><a href="#Prim8" onclick="getClass(this)">Class Pre-Nine</a></li>
-      <li><a href="#Prim9" onclick="getClass(this)">Class IX</a></li>
-      <li><a href="#Prim10" onclick="getClass(this)">Class X</a></li>
+      <li><a id="class6" href="#Prim6" onclick="getClass(this)">Class VI</a></li>
+      <li><a id="class7" href="#Prim7" onclick="getClass(this)">Class VII</a></li>
+      <li><a id="class8" href="#Prim8" onclick="getClass(this)">Class Pre-Nine</a></li>
+      <li><a id="class9" href="#Prim9" onclick="getClass(this)">Class IX</a></li>
+      <li><a id="class10" href="#Prim10" onclick="getClass(this)">Class X</a></li>
   
   
     </ul>
@@ -143,6 +143,24 @@
         <div onclick="getData(this)" class="box">Physics</div>
     </div>
 <button onclick="go()">Start</button>
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+ <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+ <script>
+   // Your web app's Firebase configuration
+   var firebaseConfig = {
+     apiKey: "AIzaSyBmQfYy_p1y5A-0tzCeZDPlPJume7YwYPU",
+     authDomain: "quizappfirebases.firebaseapp.com",
+     databaseURL: "https://quizappfirebases.firebaseio.com",
+     projectId: "quizappfirebases",
+     storageBucket: "quizappfirebases.appspot.com",
+     messagingSenderId: "985601574561",
+     appId: "1:985601574561:web:43ac7087ab6fdf51fa92e0",
+     measurementId: "G-FPVCTWWN6M"
+   };
+   // Initialize Firebase
+   firebase.initializeApp(firebaseConfig);
+ </script>
 
 </body>
 <script src="localStorageStart.js"></script>

@@ -1,29 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JavaScript Quiz</title>
-    
+
     <!-- style.css -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="wrapper">
 
-        <div class="welcome_text">
-           
+        <!-- This is for login -->
+        <div id="login_div" style="text-align: center;" class="main-div">
+            <img src="Images/logo.ico" style="position: relative; text-align: center; margin-top: 20px;" width="100px"
+                height="100px" alt="">
+            <h2
+                style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: aliceblue; width: 100%; font-size: 30px;">
+                Shaur Educational Complex</h2>
+            <input type="email" placeholder="Email..." id="email_field" />
+            <input type="password" placeholder="Password..." id="password_field" />
 
-            <form class="welcome_form" name="welcome_form" onsubmit="submitForm(event)">
-                <input type="text" id="name" name="name" placeholder="Enter Your name" required>
-                <button onclick="submitForm(this)">Start Quiz</button><br><br>
-            </form>
-            <a href="selectSendCategory.html"><button id="insert">Insert the data</button></a><br>
+            <button style="width: 100px; margin-left: 100px; font-size: 20px;" onclick="login()">Login</button>
+        </div>
+        <!-- This is for login -->
+
+
+        <div id="user_div" style="width:fit-content;" class="loggedin-div">
+            <h1 style="color: bisque; font-size: 30px;">Welcome to Shaur Educational Complex</h1>
+            <p style="max-width:200px; color: #09222e; font-size: 20px;" id="user_para">Welcome to Firebase web login
+                Example. You're currently logged in.</p>
+            <button style="max-width: 450px; font-size: 25px;" onclick="submitForm(this)">Start Quiz</button><br><br>
+            <a href="selectSendCategory.html"><button style="max-width: 450px;" id="insert">Insert the
+                    data</button></a><br>
+            <button style="text-align: center; width: 200px; font-size: 20px;" onclick="logout()">Logout</button>
+
+
         </div>
     </div>
+    <!-- This is for showing after the login is held -->
+
+
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyB9-f-9U1fEVOyx4qip2gAOQSCMSF_M-Ac",
+            authDomain: "studentsauthentication.firebaseapp.com",
+            databaseURL: "https://studentsauthentication.firebaseio.com",
+            projectId: "studentsauthentication",
+            storageBucket: "studentsauthentication.appspot.com",
+            messagingSenderId: "52305948125",
+            appId: "1:52305948125:web:4c201537a566361b851a34",
+            measurementId: "G-60XDX0FZ3B"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+
+
+
+
+
+
 
     <!-- site.js -->
     <script src="start.js"></script>
 </body>
+
 </html>

@@ -3,10 +3,35 @@
     margin: 0;
     box-sizing: border-box;
   }
-  body {
-    font-family: "Lato";
-    
-  }
+body 
+{
+    /* background-image: url('download.jfif') no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+}
+label
+{
+    font-size: 30px;
+    color: rgb(10, 2, 77);
+}
+option,select
+{
+  background-color:white;
+  color: black;
+  font-size: 25px;
+  border-bottom: 1px solid white;
+  
+}
+option:hover
+{
+  background-color: #2d971f;
+  color: aliceblue;
+  font-size: 25px;
+  border-bottom: 1px solid white;
+  
+}
   .wrapper  {
     display: flex;
     justify-content: center;
@@ -186,5 +211,84 @@ a{
     font-size: 35px;
   }
   
- 
+  input, button {
+    font-family: 'Nunito', sans-serif;
+    
+  }
   
+  .main-div, .loggedin-div {
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 0px;
+    padding: 20px;
+    display: none;
+background: transparent;
+  }
+ #login_div{
+     background-image: url('Images/backlogin.jfif');
+     background-repeat: no-repeat;
+     background-size: cover;
+ height: auto; width: fit-content; border: 1px solid black;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: block;
+ }
+
+  .main-div input {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    padding: 15px;
+    outline: none;
+    min-width: 100%;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    font-size: 20px;
+  }
+  
+  .main-div input:focus {
+    border: 1px solid #777;
+  }
+  
+  .main-div button, .loggedin-div button {
+    background: #5d8ffc;
+    color: #fff;
+    border: 1px solid #5d8ffc;
+    border-radius: 5px;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    transition: 0.3s linear;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+  }
+  
+  .main-div button:hover, .loggedin-div button:hover {
+    background: #fff;
+    color: #5d8ffc;
+    border: 1px solid #5d8ffc;
+    cursor: pointer;
+  }
+
+  #email_field
+  {
+      width: 80%;
+  }
+  #password_field
+  {
+   width: 80%;   
+  }
+  
+  #user_div
+  {
+  width: 100%;
+  background: transparent;
+  margin: 0 auto;
+  }

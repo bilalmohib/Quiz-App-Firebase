@@ -54,17 +54,3 @@ var Score={
 firebase.database().ref(`Score/${className}/${subjectName}/`).push(Score);
 
 
-//refreshing the page remove this lines and see the error and if there is a way to overcome it I dont know
-// var x = window.location.href;
-// x = x.split( '#' );
-// window.location.href = x[0];
-
-//}
-//This is This is This is This is score sending
-
-
-
-
-
-    // document.querySelector("span.points").innerHTML = user_points;
-    // document.querySelector("span.time_taken").innerHTML = user_time;

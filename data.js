@@ -1,4 +1,4 @@
-alert("The username is :bilalmohib7896@gmail.com\nThe password is: good123");
+
 var database=firebase.database();
 /////////////////////////////////////////////////////////////////////
 // Initialize the FirebaseUI Widget using Firebase.
@@ -59,12 +59,33 @@ let subjectName = sessionStorage.getItem("subjectName");
 var clas=document.getElementById("clas").innerHTML=className;
 var sub=document.getElementById("sub").innerHTML="Subject: "+subjectName;
 ////////////////////////////////////////////////////////
-alert("You are now Entering the data for :-"+className+"\nFOR SUBJECT :-"+subjectName);
 while(className==""||subjectName=="")
 {
   alert("Please go back and choose the class and the subject to proceed");
 }
 console.log(className+"\n"+subjectName);
+
+
+function disableQuiz()
+{
+ // var key=firebase.database().ref('Quiz/').push().key;
+ var Condition={
+  Value:false
+}
+  
+  firebase.database().ref(`Condition/${className}/`).set(Condition);
+}
+
+function enableQuiz()
+{
+     // var key=firebase.database().ref('Quiz/').push().key;
+  var Condition={
+    Value:true
+}
+
+firebase.database().ref(`Condition/${className}/`).set(Condition);
+}
+
 
 /////////////////////////////////////////
 function sendMesssage()
@@ -118,10 +139,7 @@ var Quiz={
 firebase.database().ref(`Quiz/${className}/${subjectName}/`).push(Quiz);
 
 
-//refreshing the page remove this lines and see the error and if there is a way to overcome it I dont know
-var x = window.location.href;
-x = x.split( '#' );
-window.location.href = x[0];
+
 
 }
 // Listen for form submit
