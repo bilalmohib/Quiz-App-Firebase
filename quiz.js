@@ -47,9 +47,12 @@ console.log(keys.length)
     question_count++;
     show(question_count);
     //console.log(keys);
+    
   });
   }
   
+  setInterval(next,60000);
+
   function show(count) {
   //  let question=document.getElementById("question");
     let question = document.getElementById("questions");
