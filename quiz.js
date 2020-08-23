@@ -5,8 +5,8 @@ let className = sessionStorage.getItem("className");
 let subjectName = sessionStorage.getItem("subjectName");
 console.log(className+"\n"+subjectName);
 ///////////////////////////////////////////////////////////
-var clas=document.getElementById("clas").innerHTML=className;
-var sub=document.getElementById("sub").innerHTML=subjectName;
+document.getElementById("clas").innerHTML=subjectName;
+document.getElementById("sub").innerHTML=className;
 ///////////////////////////////////////////////////////////
 /////////////////////////////////////////
 

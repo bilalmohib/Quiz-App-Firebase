@@ -33,18 +33,19 @@ option:hover
   
 }
   .wrapper  {
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    max-width: 100%;
     height: 100vh;
     background-image:  url('download.jfif');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+
   }
   
   .welcome_text {
-    width: 400px;
+    max-width: 400px;
     
   }
   
@@ -110,11 +111,11 @@ a{
     transform: translateY(-5px);
     cursor: pointer;
   }
-  /* yahans pe grid system use huwa ha */
   .quiz {
     display: grid;
     grid-template-rows: 60px auto;
-    width: 800px;
+    max-width: 800px;
+  
     height: 500px;
     background-color: #fff;
     box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
@@ -292,3 +293,53 @@ background: transparent;
   background: transparent;
   margin: 0 auto;
   }
+
+  #clas
+  {
+    font-size: 30px;
+    color: #341f97;
+    text-shadow: 2px 2px 3px 3px green;
+  }
+  #sub
+  {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+ 
+  @media screen and (max-width:310px)
+  {
+    .quiz
+    {
+      margin-left: 15%;
+      font-size: 18px;
+    }
+  }
+
+  @media screen and (max-width:295px)
+  {
+    .quiz
+    {
+      margin-left: 15%;
+      font-size: 16.5px;
+    }
+  }
+  
+  @media screen and (max-width:275px)
+  {
+    .quiz
+    {
+      margin-left: 15%;
+      font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width:265px)
+  {
+    .quiz
+    {
+      margin-left: 50%;
+      font-size: 18px;
+    }
+  }
+  
+  
