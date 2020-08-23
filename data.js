@@ -73,7 +73,7 @@ function disableQuiz()
   Value:false
 }
   
-  firebase.database().ref(`Condition/${className}/`).set(Condition);
+  firebase.database().ref(`Condition/${className}/${subjectName}`).set(Condition);
 }
 
 function enableQuiz()
@@ -83,7 +83,7 @@ function enableQuiz()
     Value:true
 }
 
-firebase.database().ref(`Condition/${className}/`).set(Condition);
+firebase.database().ref(`Condition/${className}/${subjectName}`).set(Condition);
 }
 
 

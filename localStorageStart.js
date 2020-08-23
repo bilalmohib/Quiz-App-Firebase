@@ -12,85 +12,486 @@ console.log("The user name getted from the login students authentication: ", use
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-firebase.database().ref(`Condition/Class III/`).on('value', (data) => {
 
+//Class 3
+firebase.database().ref(`Condition/Class III/English`).on('value', (data) => {
   var condition = data.val().Value;
   console.log(condition);
   if (condition == false) {
-    document.getElementById("class3").style = "display:none";
+    document.getElementById("english3").style = "display:none";
   }
 });
-
-
-firebase.database().ref(`Condition/Class IV/`).on('value', (data) => {
-
+firebase.database().ref(`Condition/Class III/Math`).on('value', (data) => {
   var condition = data.val().Value;
   console.log(condition);
   if (condition == false) {
-    document.getElementById("class4").style = "display:none";
+    document.getElementById("math3").style = "display:none";
   }
 });
-
-
-firebase.database().ref(`Condition/Class V/`).on('value', (data) => {
-
+firebase.database().ref(`Condition/Class III/Science`).on('value', (data) => {
   var condition = data.val().Value;
   console.log(condition);
   if (condition == false) {
-    document.getElementById("class5").style = "display:none";
+    document.getElementById("science3").style = "display:none";
   }
 });
-
-
-firebase.database().ref(`Condition/Class VI/`).on('value', (data) => {
-
+firebase.database().ref(`Condition/Class III/Social Studies`).on('value', (data) => {
   var condition = data.val().Value;
   console.log(condition);
   if (condition == false) {
-    document.getElementById("class6").style = "display:none";
+    document.getElementById("ss3").style = "display:none";
   }
 });
-
-
-firebase.database().ref(`Condition/Class VII/`).on('value', (data) => {
-
+firebase.database().ref(`Condition/Class III/Urdu`).on('value', (data) => {
   var condition = data.val().Value;
   console.log(condition);
   if (condition == false) {
-    document.getElementById("class7").style = "display:none";
+    document.getElementById("urdu3").style = "display:none";
   }
 });
-
-
-firebase.database().ref(`Condition/Class Pre-Nine/`).on('value', (data) => {
-
+firebase.database().ref(`Condition/Class III/Islamiyat`).on('value', (data) => {
   var condition = data.val().Value;
   console.log(condition);
   if (condition == false) {
-    document.getElementById("class8").style = "display:none";
+    document.getElementById("islamiyat3").style = "display:none";
   }
 });
-
-
-firebase.database().ref(`Condition/Class IX/`).on('value', (data) => {
-
+firebase.database().ref(`Condition/Class III/ICT`).on('value', (data) => {
   var condition = data.val().Value;
   console.log(condition);
   if (condition == false) {
-    document.getElementById("class9").style = "display:none";
+    document.getElementById("ict3").style = "display:none";
   }
 });
+//Class3
 
 
-
-firebase.database().ref(`Condition/Class X/`).on('value', (data) => {
-
+//Class4
+firebase.database().ref(`Condition/Class IV/English`).on('value', (data) => {
   var condition = data.val().Value;
   console.log(condition);
   if (condition == false) {
-    document.getElementById("class10").style = "display:none";
+    document.getElementById("english4").style = "display:none";
   }
 });
+firebase.database().ref(`Condition/Class IV/Math`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("math4").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class IV/Science`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("science4").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class IV/Social Studies`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("ss4").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class IV/Urdu`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("urdu4").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class IV/Islamiyat`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("islamiyat4").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class IV/ICT`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("ict4").style = "display:none";
+  }
+});
+//Class4
+
+
+//Class5
+firebase.database().ref(`Condition/Class V/English`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("english5").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class V/Math`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("math5").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class V/Science`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("science5").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class V/Social Studies`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("ss5").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class V/Urdu`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("urdu5").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class V/Islamiyat`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("islamiyat5").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class V/ICT`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("ict5").style = "display:none";
+  }
+});
+//Class5
+
+//Class6
+firebase.database().ref(`Condition/Class VI/English`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("english6").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class VI/Math`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("math6").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class VI/Science`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("science6").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class VI/History`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("history6").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class VI/Urdu`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("urdu6").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class VI/Islamiyat`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("islamiyat6").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class VI/Geography`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("geography6").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class VI/ICT`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("ict6").style = "display:none";
+  }
+});
+//Class6
+
+
+//Class7
+firebase.database().ref(`Condition/Class VII/English`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("english7").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class VII/Math`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("math7").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class VII/Science`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("science7").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class VII/History`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("history7").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class VII/Urdu`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("urdu7").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class VII/Islamiyat`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("islamiyat7").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class VII/Geography`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("geography7").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class VII/ICT`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("ict7").style = "display:none";
+  }
+});
+//Class7
+
+
+//Class Pre-Nine
+firebase.database().ref(`Condition/Class Pre-Nine/English`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("english8").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class Pre-Nine/Math`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("math8").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class Pre-Nine/Pak Studies`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("ps8").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class Pre-Nine/Chemistry`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("chemistry8").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class Pre-Nine/Urdu`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("urdu8").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class Pre-Nine/Islamiyat`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("islamiyat8").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class Pre-Nine/Physics`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("physics8").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class Pre-Nine/Computer`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("computer8").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class Pre-Nine/Biology`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("biology8").style = "display:none";
+  }
+});
+//Class Pre-Nine
+
+
+//Class nine
+firebase.database().ref(`Condition/Class IX/English`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("english9").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class IX/Math`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("math9").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class IX/Pak Studies`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("ps9").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class IX/Chemistry`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("chemistry9").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class IX/Urdu`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("urdu9").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class IX/Islamiyat`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("islamiyat9").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class IX/Physics`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("physics9").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class IX/Computer`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("computer9").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class IX/Biology`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("biology9").style = "display:none";
+  }
+});
+//Class nine
+
+
+
+//Class ten
+firebase.database().ref(`Condition/Class X/English`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("english10").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class X/Math`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("math10").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class X/Pak Studies`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("ps10").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class X/Chemistry`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("chemistry10").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class X/Urdu`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("urdu10").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class X/Islamiyat`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("islamiyat10").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class X/Physics`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("physics10").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class X/Computer`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("computer10").style = "display:none";
+  }
+});
+firebase.database().ref(`Condition/Class X/Biology`).on('value', (data) => {
+  var condition = data.val().Value;
+  console.log(condition);
+  if (condition == false) {
+    document.getElementById("biology10").style = "display:none";
+  }
+});
+//Class ten
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 
